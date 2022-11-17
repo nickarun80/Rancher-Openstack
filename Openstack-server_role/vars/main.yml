@@ -1,24 +1,64 @@
 server_definitions:
- U-VDI-1:
+ rke-sit-mgr:
   image: ubuntu
   flavor: 387eba78-858d-46f4-83c7-678abc0596e3
   network: 9d85eea4-50eb-4aba-a12e-0d89de56cb4b
   security_groups: default
   tags: 
     os: ubuntu
+    node: rke-sit-mgr  
 
- U-VDI-2:
+ rke-sit-con-1:
   image: ubuntu
   flavor: 387eba78-858d-46f4-83c7-678abc0596e3
   network: 9d85eea4-50eb-4aba-a12e-0d89de56cb4b
   security_groups: default
   tags: 
     os: ubuntu
+    node: rke-sit-con
 
- U-VDI-3:
+rke-sit-con-2:
   image: ubuntu
   flavor: 387eba78-858d-46f4-83c7-678abc0596e3
   network: 9d85eea4-50eb-4aba-a12e-0d89de56cb4b
   security_groups: default
   tags: 
     os: ubuntu
+    node: rke-sit-con
+
+ rke-sit-con-3:
+  image: ubuntu
+  flavor: 387eba78-858d-46f4-83c7-678abc0596e3
+  network: 9d85eea4-50eb-4aba-a12e-0d89de56cb4b
+  security_groups: default
+  tags: 
+    os: ubuntu
+    node: rke-sit-con
+
+ rke-sit-wk-1:
+  image: ubuntu
+  flavor: 387eba78-858d-46f4-83c7-678abc0596e3
+  network: 9d85eea4-50eb-4aba-a12e-0d89de56cb4b
+  security_groups: default
+  tags: 
+    os: ubuntu
+    node: rke-sit-wk   
+
+ rke-sit-wk-2:
+  image: ubuntu
+  flavor: 387eba78-858d-46f4-83c7-678abc0596e3
+  network: 9d85eea4-50eb-4aba-a12e-0d89de56cb4b
+  security_groups: default
+  tags: 
+    os: ubuntu
+    node: rke-sit-wk
+
+ rke-sit-wk-3:
+  image: ubuntu
+  flavor: 387eba78-858d-46f4-83c7-678abc0596e3
+  network: 9d85eea4-50eb-4aba-a12e-0d89de56cb4b
+  security_groups: default
+  tags: 
+    os: ubuntu
+    node: rke-sit-wk            
+
