@@ -1,0 +1,7 @@
+---
+- name: Pause
+  hosts: localhost
+  tasks:
+  - name: Pause
+    pause:
+      seconds: 5
