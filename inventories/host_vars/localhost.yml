@@ -1,4 +1,0 @@
----
-# don't use sudo for localhost
-ansible_become: false
-become: false
