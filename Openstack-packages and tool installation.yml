@@ -18,3 +18,19 @@
   - name: change hostname to myserver
     hostname:
      name: "rke-sit-mgr"
+    when: ansible_distribution == 'rke-sit-mgr'
+
+  - name: change hostname to myserver
+    hostname:
+     name: "rke-sit-con-01"
+    when: ansible_distribution == 'rke-sit-con-01'
+
+  - name: change hostname to myserver
+    hostname:
+     name: "rke-sit-con-02"
+    when: ansible_distribution == 'rke-sit-con-02'
+
+  - name: change hostname to myserver
+    hostname:
+     name: "rke-sit-mgr"
+    when: ansible_distribution == 'rke-sit-mgr'
