@@ -15,7 +15,7 @@ server_definitions:
   security_groups: default
   tags: 
     os: ubuntu
-    node: rke-sit-con
+    node: rke-sit-con-01
 
 rke-sit-con-2:
   image: ubuntu
@@ -24,7 +24,7 @@ rke-sit-con-2:
   security_groups: default
   tags: 
     os: ubuntu
-    node: rke-sit-con
+    node: rke-sit-con-02
 
  rke-sit-con-3:
   image: ubuntu
@@ -33,7 +33,7 @@ rke-sit-con-2:
   security_groups: default
   tags: 
     os: ubuntu
-    node: rke-sit-con
+    node: rke-sit-con-03
 
  rke-sit-wk-1:
   image: ubuntu
@@ -42,7 +42,7 @@ rke-sit-con-2:
   security_groups: default
   tags: 
     os: ubuntu
-    node: rke-sit-wk   
+    node: rke-sit-wk-01   
 
  rke-sit-wk-2:
   image: ubuntu
@@ -51,7 +51,7 @@ rke-sit-con-2:
   security_groups: default
   tags: 
     os: ubuntu
-    node: rke-sit-wk
+    node: rke-sit-wk-02
 
  rke-sit-wk-3:
   image: ubuntu
@@ -60,5 +60,5 @@ rke-sit-con-2:
   security_groups: default
   tags: 
     os: ubuntu
-    node: rke-sit-wk            
+    node: rke-sit-wk-03           
 
