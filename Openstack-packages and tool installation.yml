@@ -2,6 +2,8 @@
 - name: packages and tool installation
   hosts: all
 
+########################## update and upgrade
+
   tasks:
   - name: update
     apt:
@@ -14,6 +16,8 @@
      name: upgrade
      state: present
     when: ansible_distribution == 'Debian' or ansible_distribution == 'Ubuntu'    
+
+########################## Hostnamechange
 
   - name: change hostname to myserver
     hostname:
@@ -33,4 +37,23 @@
   - name: change hostname to myserver
     hostname:
      name: "rke-sit-mgr"
-    when: ansible_distribution == 'rke-sit-mgr'
+    when: ansible_distribution == 'rke-sit-con-03'
+
+  - name: change hostname to myserver
+    hostname:
+     name: "rke-sit-con-01"
+    when: ansible_distribution == 'rke-sit-wk-01'
+
+  - name: change hostname to myserver
+    hostname:
+     name: "rke-sit-con-02"
+    when: ansible_distribution == 'rke-sit-wk-02'
+
+  - name: change hostname to myserver
+    hostname:
+     name: "rke-sit-mgr"
+    when: ansible_distribution == 'rke-sit-wk-03'
+
+########################## Hostnamechange
+
+
